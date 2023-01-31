@@ -21,3 +21,7 @@ export async function getHotelsService(userId: number) {
 
   return await hotelsRepository.findAll();
 }
+
+export async function getHotelsIdService(idHotel: number) {
+  return await hotelsRepository.findById(idHotel);
+}
